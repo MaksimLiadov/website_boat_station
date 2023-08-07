@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require_once 'connect.php';
     require_once 'style.css';
 ?>
@@ -15,25 +16,20 @@
 <body>
     <form action="person_insert.php" method="post">
     <div class="login">
-        <h1>Вход</h1>
+        <h1>Регистрация</h1>
         <div class="input">
-            <input type="text" placeholder="Логин" name="FIO">
-            <input type="text" placeholder="Пароль" name="FIO">
+            <input type="text" placeholder="Логин" name="login">
+            <input type="text" placeholder="Пароль" name="password">
             <input type="text" placeholder="ФИО" name="FIO">
             <input type="text" placeholder="Адрес" name="Address">
             <input type="text" placeholder="Паспортные данные" name="Pasport_data">
-            <select name="pets" id="pet-select">
-                <option value="">Выберите место отдыха</option>
-                <option value="s1">Кама</option>
-                <option value="s2">Иртыш</option>
-                <option value="s3">Река3</option>
-                </select>
         </div>
         <div class="login_buttons"> 
-        <button type="submit">Зарегистрироваться</button>
-            <p>
-               У вас уже есть аккаунт? - <a href="/index.php"> Вход </a> 
-            </p>
+        <ul>
+            <li><button type="submit">Зарегистрироваться</button></li>
+            <li> <p>У вас уже есть аккаунт? - </p></li>
+            <li><a href="/index.php"> Вход </a></li>
+        </ul>
         </div>
     </div>
     </form>

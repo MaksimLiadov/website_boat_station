@@ -31,10 +31,6 @@ body {
 .login p {
 	color: #fff;
 }
-.login select {
-	margin-top: 20px;
-}
-
 .input {
 	margin: 15px 40px;
 	text-align: start;
@@ -47,6 +43,10 @@ body {
 	transition: .3s;
     background: none;
 }
+.login_buttons p {
+	margin-top: 0px;
+	padding-right: 5px;
+}
 
 .login_buttons button:hover {
 	color: #0fc3f5;
@@ -55,6 +55,7 @@ ul {
     display: flex;
     list-style: none;
     justify-content: center;
+	color: #ffffff;
   }
 
 .input input {
@@ -76,36 +77,9 @@ ul {
 	border: 1px solid #0fc3f5;
 }
 
-.input input[type="radio"] {
-	margin-top: 20px;
-	color: white;
-	
-}
-
-.input input[type="submit"] {
-	margin-top: 20px;
-	color: #fff;
-	font-weight: bold;
-	text-transform: uppercase;
-	border: none;
-	background: #0fc3f5;
-	transition: .3s;
-}
-
-.input input[type="submit"]:hover {
-	background: #4442db;
-}
-
-input[type='radio'] {
-        width: 15px;
-        height: 15px;
-    }
-
 label{
 	color:white;
 }
-
-
 .login a {
 	display: block;
 	padding: 0 0 30px;
@@ -118,5 +92,34 @@ label{
 .login a:hover {
 	color: #0fc3f5;
 }
+.msg {
+    text-align: center;
+    font-weight: bold;
+}
 
+table{
+	border: 1px solid #EEE;
+	margin-bottom: 20px;
+    margin: auto;
+}
+table th {
+	font-weight: bold;
+	padding: 5px;
+	background: #bae9ff;
+	border: 1px solid #dddddd;
+}
+table td {
+	padding: 5px 10px;
+	border: 1px solid #EEE;
+	text-align: center;
+}
+table tbody tr:nth-child(odd) {
+	background: #fff;
+}
+table tbody tr:nth-child(even) {
+	background: #F7F7F7;
+}
+div {
+  text-align: center;
+}
 </style>
