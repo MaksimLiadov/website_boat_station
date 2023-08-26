@@ -10,12 +10,16 @@
 
     if(mysqli_num_rows($chek_user)>0){
         
-        $user = mysqli_fetch_assoc($chek_user);
+       $user = mysqli_fetch_assoc($chek_user);
         $_SESSION['user'] = [
-            "id" => $user['id']
+            "id" => $user['id_user'],
+            "name" => $user['fio']
         ];
-        
+
         header('Location: main.php');
+    
+    print_r($user);
+    print_r($_SESSION);
     }
        else{
             $_SESSION['message'] = 'Не верный логин или пароль.';
