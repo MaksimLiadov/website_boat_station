@@ -9,9 +9,9 @@
 
     $Password = md5($Password);
 
-    $sql = "INSERT INTO `User` (`id_user`, `fio`, `pasport_data`, `addres`, `issue_date`, `id_reservoir`, `id_instruction`, `use_duration`, `login`, `password`) VALUES (NULL, '$FIO', '$Pasport_data', '$Address', NULL, NULL, NULL, NULL, '$Login', '$Password')";
+    $sql = "INSERT INTO `User` (`id_user`, `fio`, `pasport_data`, `addres`, `issue_date`, `id_reservoir`, `instruction`, `use_duration`, `login`, `password`, `id_watercraft`) VALUES (NULL, '$FIO', '$Pasport_data', '$Address', NULL, NULL, NULL, NULL, '$Login', '$Password', NULL)";
     
     mysqli_query($connect, $sql);
 
-    header('Location: main.php');
+    header('Location: index.php');
 ?>

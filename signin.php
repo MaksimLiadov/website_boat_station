@@ -17,9 +17,6 @@
         ];
 
         header('Location: main.php');
-    
-    print_r($user);
-    print_r($_SESSION);
     }
        else{
             $_SESSION['message'] = 'Не верный логин или пароль.';

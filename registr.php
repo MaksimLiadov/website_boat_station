@@ -9,7 +9,7 @@
 
 <head>
     <meta charset='utf-8'>
-    <title>Вход</title>
+    <title>Регистрация</title>
     
 </head>
 
